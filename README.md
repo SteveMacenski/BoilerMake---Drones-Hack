@@ -9,3 +9,5 @@ BoilerMake hackathon 2015
 12:00: Broke quadcopter blade.. uhh.. it came that way. Flies a little off. 
 
 2:00: Drone has literally /no/ payload capacity, pivoting to something else, stay tuned.
+
+2:06: Okay, ya making drone to be controlled via android app and through the N64 controller. Using the onboard IMU taking data for analysis and simulation.
