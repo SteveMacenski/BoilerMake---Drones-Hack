@@ -18,4 +18,4 @@ BoilerMake hackathon 2015
 
 4:11: No stopping in sight, in fact we're not tired. Onwards with cutting cardboard!
 
-8:32: Work all night, arduino bugs finished- onto serial coms. App up in android!
+8:32: Work all night, arduino bugs finished- onto serial coms. App up in android! IK cheats with forcing positive domain. Should be fine if we never cross the axial barriers :-)
