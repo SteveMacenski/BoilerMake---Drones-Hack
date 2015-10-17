@@ -1,4 +1,4 @@
-# BoilerMake---PlotternotDrones-Hack
+# BoilerMake---ISSTrackernotPlotternotDrones-Hack
 
 Using parrot drones to autonomously fly and be controlled via android app using an N64 Controller
 
@@ -21,3 +21,5 @@ BoilerMake hackathon 2015
 8:32: Work all night, arduino bugs finished- onto serial coms. App up in android! IK cheats with forcing positive domain. Should be fine if we never cross the axial barriers :-)
 
 2:04pm: The plotter kind of works, we'll go with that. 
+
+2:40pm: ISS tracker now, the plotter was doomed to fail
