@@ -11,3 +11,7 @@ BoilerMake hackathon 2015
 2:00: Drone has literally /no/ payload capacity, pivoting to something else, stay tuned.
 
 2:06: Okay, ya making drone to be controlled via android app and through the N64 controller. Using the onboard IMU taking data for analysis and simulation.
+
+2:30: Fuck it, we're making a 2D plotter *these are not hte drones you are looking for*
+
+3:04: Doing forward/inverse kinematics, this hack is coming full circle
