@@ -7,12 +7,11 @@ import (
 	"net/http"
 )
 
-const openNotifyUrl = "http://api.open-notify.org/iss-now.json"
+const openNotifyUrl = "https://api.wheretheiss.at/v1/satellites/25544"
 
 type ISSPosition struct {
-	Message string `json:"message"`
-	//Timestamp   time.Time `json:"timestamp"`
-	Coordinates location.GPSCoords `json:"iss_position"`
+	location.GPSCoords
+	Altitude float64 `json:"altitude"`
 }
 
 func Fetch() (*ISSPosition, error) {
