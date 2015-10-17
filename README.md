@@ -15,3 +15,5 @@ BoilerMake hackathon 2015
 2:30: Fuck it, we're making a 2D plotter *these are not hte drones you are looking for*
 
 3:04: Doing forward/inverse kinematics, this hack is coming full circle
+
+4:11: No stopping in sight, in fact we're not tired. Onwards with cutting cardboard!
