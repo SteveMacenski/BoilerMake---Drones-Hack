@@ -11,8 +11,8 @@ double l2 = 14; //cm
 double theta1 = 34;
 double theta2 = 128;
 
-double x = -14;
-double y = -0;
+double x;
+double y;
 
 Servo link1;
 Servo link2;
@@ -27,8 +27,8 @@ void loop() {
   
   //reading in values from serial
     while (Serial.available())  {
-      x = -Serial.parsefloat();
-      y = -Serial.parsefloat();
+      x = -Serial.parseFloat();
+      y = -Serial.parseFloat();
     } 
 
     // inverse kinematics
