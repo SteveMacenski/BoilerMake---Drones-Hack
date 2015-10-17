@@ -17,3 +17,5 @@ BoilerMake hackathon 2015
 3:04: Doing forward/inverse kinematics, this hack is coming full circle
 
 4:11: No stopping in sight, in fact we're not tired. Onwards with cutting cardboard!
+
+8:32: Work all night, arduino bugs finished- onto serial coms. App up in android!
