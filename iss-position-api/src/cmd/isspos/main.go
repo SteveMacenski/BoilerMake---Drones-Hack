@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"coordinates"
 	"fmt"
 	iss "issposlib"
@@ -8,7 +9,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/huin/goserial"
+	goserial "github.com/tarm/serial"
 )
 
 func main() {
@@ -21,6 +22,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	bufreader := bufio.NewReader(port)
+	time.Sleep(5 * time.Second)
 
 	// Get my location
 	myLocation, err := location.GetMyLocation()
@@ -49,12 +52,15 @@ func main() {
 
 		azimuth, inclination := coordinates.ToRelative(pos, myLocation)
 
-		log.Print("Inclination ", inclination, ", azimuth ", azimuth)
+		log.Printf("%.2f %.2f\n", inclination, azimuth)
 
 		// write to Arduino
-		fmt.Fprint(port, inclination)
-		fmt.Fprint(port, " ")
-		fmt.Fprint(port, azimuth)
+		fmt.Fprintf(port, "%.2f %.2f\n", inclination, azimuth)
+		port.Flush()
+
+		line, _ := bufreader.ReadString('\n')
+
+		log.Print("Read \"", string(line), "\" from serial")
 
 		time.Sleep(60 * time.Second)
 	}

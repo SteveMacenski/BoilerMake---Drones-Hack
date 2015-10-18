@@ -6,6 +6,12 @@
 			"repository": "https://github.com/huin/goserial",
 			"revision": "7b90efdb22b1c168a57b998b2780cf541b2c4740",
 			"branch": "master"
+		},
+		{
+			"importpath": "github.com/tarm/serial",
+			"repository": "https://github.com/tarm/serial",
+			"revision": "e3f4c97bb7137112ddfc06cc44a939e45f41d941",
+			"branch": "master"
 		}
 	]
 }
