@@ -37,7 +37,8 @@ while (Serial.available())  {
 
 //to ensure altitude is positive since servo is 0-180
 altitude = (int)altitude;
-myServo.write(altitude+110);
+//myServo.write(altitude+90);
+myServo.write(90+20); //to make it move in demo for Apple TODO
 
 // defining variables
 double step_deg = 1.8; //degrees
@@ -47,7 +48,6 @@ int step_count = 0; //number of steps taken
 //calculating need for change in stepper motor 
 double asmuth_change = asmuth - asmuth_old;
 int stepper_move = asmuth_change / step_deg;
-
 
 // in case moving N-s or S-n
 if (stepper_move > 1) {
