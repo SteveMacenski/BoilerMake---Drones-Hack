@@ -32,12 +32,12 @@ while (Serial.available())  {
    altitude = Serial.parseFloat();
    asmuth = Serial.parseFloat();
    Serial.flush();
-//   Serial.print(altitude);Serial.print(' ');Serial.println(asmuth);
+   Serial.print(altitude);Serial.print(' ');Serial.println(asmuth);
 }
 
 //to ensure altitude is positive since servo is 0-180
 altitude = (int)altitude;
-myServo.write(altitude+90);
+myServo.write(altitude+110);
 
 // defining variables
 double step_deg = 1.8; //degrees
@@ -52,15 +52,15 @@ int stepper_move = asmuth_change / step_deg;
 // in case moving N-s or S-n
 if (stepper_move > 1) {
   myMotor->step(stepper_move,FORWARD, SINGLE);
-  if (stepper_move != 0){
+//  if (stepper_move != 0){
 //    Serial.println(stepper_move);
+//}
 }
-}
-if (stepper_move < -1) {
+if (stepper_move < 0) {
   myMotor->step(-1*stepper_move,BACKWARD, SINGLE);
-  if (stepper_move != 0){
+//  if (stepper_move != 0){
 //    Serial.println(stepper_move);
-  }
+//  }
 }
 
 // assigning asmuth to old one to store for delta calculation
