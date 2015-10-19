@@ -38,7 +38,6 @@ while (Serial.available())  {
 //to ensure altitude is positive since servo is 0-180
 altitude = (int)altitude;
 myServo.write(altitude+90);
-//myServo.write(90+20); //to make it move in demo for Apple TODO
 
 // defining variables
 double step_deg = 1.8; //degrees
