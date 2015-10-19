@@ -1,6 +1,6 @@
 # BoilerMake---ISSTrackernotPlotternotDrones-Hack
 
-Using parrot drones to autonomously fly and be controlled via android app using an N64 Controller
+Making an international space station tracker recieving TLE data from NASA servers and then sending a laser pointer into the wall/ceiling to track the ISS when above head. 
 
 BoilerMake hackathon 2015
 
@@ -23,3 +23,5 @@ BoilerMake hackathon 2015
 2:04pm: The plotter kind of works, we'll go with that. 
 
 2:40pm: ISS tracker now, the plotter was doomed to fail
+
+Sometime there after: completed and demoed.
